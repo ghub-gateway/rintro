@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#
-# standard tool
-#
-/usr/bin/invoke_app "$@" -t rintro \
-                         -C rappture
+/usr/bin/invoke_app "$@" \
+	-C "start_jupyter -t RIntro -T @tool R-Example-Zoo.ipynb" \
+        -r none \
+	-u anaconda-6
