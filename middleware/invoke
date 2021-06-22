@@ -1,6 +1,6 @@
 #!/bin/sh
 
 /usr/bin/invoke_app "$@" \
-	-C "start_jupyter -t RIntro -T @tool R-Example-Zoo.ipynb" \
+	-C "start_jupyter -T @tool R-Example-Zoo.ipynb" \
         -r none \
 	-u anaconda-6
